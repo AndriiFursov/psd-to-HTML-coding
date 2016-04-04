@@ -1,0 +1,272 @@
+/*
+ * This is file of styles for about.html 
+ *
+*/
+
+@import url(https:fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One|BenchNine);
+
+
+/* ----------------------- *\
+   SECTION-VARIABLES&MIXINS
+\* ----------------------- */
+/* ------ COLORS --------- */
+
+@color-main-header-txt:    #fffbfb;
+@color-main-menu-txt:      #2d1d1d;
+
+@color-design-section:     #c0d25c;
+@color-techniques-section: #2e5fae;
+@color-rustic-section:     #444243;
+
+@color-figure-header-bg:   #ececec;
+@color-figure-header-txt:  @color-main-menu-txt;
+@color-figure-footer-txt:  @color-main-header-txt;
+
+@color-technique-txt:      #1b4b9d;
+
+@color-rustic-txt:         @color-rustic-section;
+
+@color-footer-bg:          @color-rustic-section;
+
+
+/* ------ FONTS --------- */
+
+@font-main: Arial, sans-serif;
+
+/* ------ MIXINS --------- */
+
+.img100-mxn {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* ----------------------- *\
+   SECTION-TOTAL
+\* ----------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 760px;
+    font-family: @font-main;
+    font-size: 100%;
+    
+    
+    >div {
+        width: 100%;
+        max-width: 1280px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+
+
+
+
+/* ----------------------- *\
+   SECTION-MAIN
+\* ----------------------- */
+
+main {
+    margin-top: 1rem;
+    
+    
+    .wrapper {
+        padding: 0 4%;
+    }
+}
+
+// menu 
+nav {
+    text-align: center;
+    
+    
+    ul {
+        width: 100%;
+        list-style-type: none;
+    }
+    
+    li {
+        float: right;
+        overflow: hidden;
+        margin-left: 4%;
+        line-height: 4rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    li, li>a {
+        color: @color-main-menu-txt;
+    }
+    
+    
+    div {
+        clear: both;
+    }
+    
+    img {
+        width: 280px;
+        height: auto;
+    }
+}
+
+
+section {
+    overflow: hidden;
+}
+
+// header
+.header {
+    border-bottom: 2px solid;
+    overflow: hidden;
+    
+    
+    div {
+        position: relative;
+        top: 1px;
+        float: right;
+        width: 281px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: right;
+    }
+    
+    
+    h2 {
+        position: relative;
+        top: 4px;
+        display: inline-block;
+        width: 230px;
+        line-height: 48px;
+        font-family: Arial, sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: @color-main-header-txt;
+    }
+}
+
+
+// our latest design
+.latest-design {
+    
+    
+    .header {
+        border-bottom-color: @color-design-section;
+        margin-bottom: 15px;
+        
+        
+        div {
+            background-image: url('../img/design.png');
+        }
+        
+        
+        h2 {
+            text-transform: none;
+        }
+    }
+}
+
+
+// intro
+.intro {
+    margin-bottom: 40px;
+    text-align: center;
+
+    
+    
+    img {
+        width: 95%;
+        height: auto;
+    }
+    
+    
+    p {
+        padding: 1em 8%;
+        font-family: Arial, sans-serif;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    
+    
+    @media screen and (min-width: 920px) {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+// retro rustic
+.retro-rustic {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1rem;
+    color: @color-rustic-txt;
+    
+    
+    .header {
+        border-bottom-color: @color-rustic-section;
+        margin-bottom: 5px;
+        
+        
+        div {
+            background-image: url('../img/rustic.png');
+        }
+    }
+    
+    
+    img {
+        position: relative;
+        top: 5px;
+        width: 20px;
+        height: auto;
+    }
+    
+    
+    span {
+        line-height: 150%;
+    }
+    
+    
+    span:last-child {
+        line-height: 90%;
+    }
+}
+
+
+
+
+
+/* ----------------------- *\
+   SECTION-FOOTER 
+\* ----------------------- */
+
+footer {
+    height: 100px;
+    padding-top: 10px;
+    background-color: @color-rustic-section;
+    text-align: center;
+        
+        
+    img {
+        width: 80px;
+        height: auto;
+    }
+}
