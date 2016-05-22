@@ -1,1 +1,193 @@
-@import url(https:fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);@import url(https://fonts.googleapis.com/css?family=Fjalla+One|BenchNine);.img100-mxn{width:100%;height:auto}*{margin:0;padding:0;box-sizing:border-box}body{min-width:760px;font-family:Arial,sans-serif;font-size:100%}body>div{width:100%;max-width:1280px;margin-left:auto;margin-right:auto}main{margin-top:1rem;padding:0 4%}nav{text-align:center}nav ul{width:100%;list-style-type:none}nav li{float:right;overflow:hidden;margin-left:4%;line-height:4rem;font-size:1.1rem;font-weight:700}nav li a{text-decoration:none}nav li,nav li>a{color:#2d1d1d}nav div{clear:both}nav img{width:280px;height:auto}section{margin-bottom:50px;overflow:hidden}.header{border-bottom:2px solid;overflow:hidden;margin-bottom:30px}.header div{position:relative;top:1px;float:right;width:281px;height:50px;background-repeat:no-repeat;background-size:contain;text-align:right}.header h2{position:relative;top:4px;display:inline-block;width:230px;line-height:48px;font-family:Arial,sans-serif;font-size:1.1rem;text-align:center;text-transform:uppercase;color:#fffbfb}.latest-design .header{border-bottom-color:#c0d25c}.latest-design .header div{background-image:url(../img/design.png)}.latest-design .header h2{text-transform:none}article{margin:50px 8% 0;overflow:hidden}article img{width:100%;height:auto}article figure{position:relative;float:left;width:30%;min-width:150px;margin-right:25px}article figure .post-image{margin-top:25px}article figure .post-image img{-webkit-box-shadow:3px 3px #e8e9eb;-moz-box-shadow:3px 3px #e8e9eb;box-shadow:3px 3px #e8e9eb}article figure a{position:absolute;bottom:6%;left:50%;margin-left:-60px;width:120px;height:40px;background:linear-gradient(to top,#444243 0,#474446 35%,#999 100%);text-decoration:none;line-height:40px;text-align:center;color:#fffbfb;z-index:1}article p{padding-top:25px;font-size:1.1rem;color:#797272}@media screen and (min-width:920px){article p{font-size:1.2rem}}@media screen and (min-width:1200px){article figure{width:25%}}@media screen and (min-width:1400px){article p{font-size:1.5rem}}.retro-rustic{margin-bottom:10px;text-align:center;font-family:'Roboto Condensed',Arial,sans-serif;font-size:1rem;color:#444243}.retro-rustic .header{border-bottom-color:#444243;margin-bottom:5px}.retro-rustic .header div{background-image:url(../img/rustic.png)}.retro-rustic img{position:relative;top:5px;width:20px;height:auto}.retro-rustic span{line-height:150%}.retro-rustic span:last-child{line-height:90%}footer{height:100px;padding-top:10px;background-color:#444243;text-align:center}footer img{width:80px;height:auto}
+@import url(https:fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One|BenchNine);
+/* ----------------------- *\
+   SECTION-TOTAL
+\* ----------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 760px;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+}
+body > div {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ----------------------- *\
+   SECTION-MAIN
+\* ----------------------- */
+main {
+  margin-top: 1rem;
+  padding: 0 4%;
+}
+nav {
+  text-align: center;
+}
+nav ul {
+  width: 100%;
+  list-style-type: none;
+}
+nav li {
+  float: right;
+  overflow: hidden;
+  margin-left: 4%;
+  line-height: 4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+nav li a {
+  text-decoration: none;
+}
+nav li,
+nav li > a {
+  color: #2d1d1d;
+}
+nav div {
+  clear: both;
+}
+nav img {
+  width: 280px;
+  height: auto;
+}
+section {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.header {
+  border-bottom: 2px solid;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.header div {
+  position: relative;
+  top: 1px;
+  float: right;
+  width: 281px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: right;
+}
+.header h2 {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  width: 230px;
+  line-height: 48px;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fffbfb;
+}
+.latest-design .header {
+  border-bottom-color: #c0d25c;
+}
+.latest-design .header div {
+  background-image: url('../img/design.png');
+}
+.latest-design .header h2 {
+  text-transform: none;
+}
+article {
+  margin: 50px 8% 0;
+  overflow: hidden;
+}
+article img {
+  width: 100%;
+  height: auto;
+}
+article figure {
+  position: relative;
+  float: left;
+  width: 30%;
+  min-width: 150px;
+  margin-right: 25px;
+}
+article figure .post-image {
+  margin-top: 25px;
+}
+article figure .post-image img {
+  -webkit-box-shadow: 3px 3px #e8e9eb;
+  -moz-box-shadow: 3px 3px #e8e9eb;
+  box-shadow: 3px 3px #e8e9eb;
+}
+article figure a {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(to top, #444243 0%, #474446 35%, #999999 100%);
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  color: #fffbfb;
+  z-index: 1;
+}
+article p {
+  padding-top: 25px;
+  font-size: 1.1rem;
+  color: #797272;
+}
+@media screen and (min-width: 920px) {
+  article p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  article figure {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  article p {
+    font-size: 1.5rem;
+  }
+}
+.retro-rustic {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 1rem;
+  color: #444243;
+}
+.retro-rustic .header {
+  border-bottom-color: #444243;
+  margin-bottom: 5px;
+}
+.retro-rustic .header div {
+  background-image: url('../img/rustic.png');
+}
+.retro-rustic img {
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: auto;
+}
+.retro-rustic span {
+  line-height: 150%;
+}
+.retro-rustic span:last-child {
+  line-height: 90%;
+}
+/* ----------------------- *\
+   SECTION-FOOTER 
+\* ----------------------- */
+footer {
+  height: 100px;
+  padding-top: 10px;
+  background-color: #444243;
+  text-align: center;
+}
+footer img {
+  width: 80px;
+  height: auto;
+}
